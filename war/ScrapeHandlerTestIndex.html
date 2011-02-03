@@ -1,0 +1,108 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- The HTML 4.01 Transitional DOCTYPE declaration-->
+<!-- above set at the top of the file will set     -->
+<!-- the browser's rendering engine into           -->
+<!-- "Quirks Mode". Replacing this declaration     -->
+<!-- with a "Standards Mode" doctype is supported, -->
+<!-- but may lead to some differences in layout.   -->
+
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Scrape Handler Test Harness</title>
+	<link rel="stylesheet" type="text/css" href="/static/css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="/static/css/main.css" />
+  </head>
+
+  <body>  
+	
+    <h1>Example Queries - using scraped data</h1>
+	<p class=notes><a href="/index.html">< Back to Childmen Aggregator Test Harness</a></p>
+	
+	</br>
+	
+	<h2>INITIALISE Data Store - Example POST requests:</h2>        
+	<p class="notes">click this before running example queries</p>	
+	<form action="/initialise" method="POST">		
+		<p class="notes"><input class="button" type="submit" value="initialise!"/> This initalises the GAE datastore: Deletes all existing data. Adds all platforms and locations. Adds sample games, reviews and critics.</p>
+	</form>
+		
+	<br/>
+		
+	<h2>EXAMPLE Games GET requests:</h2> 	
+	<p class="notes">click these after datastore has been initialised!</p>
+	<ul>	
+		<li><a href="/games?outputpretty=true&name=Dead+Space+2">GET /games?outputpretty=true&name=Dead+Space+2</a> --- retrieve games by 'name'</li>
+		<li><a href="/games?outputpretty=true&genre=Action">GET /games?genre=Action</a> --- retrieve games by 'genre'</li>
+		<li><a href="/games?outputpretty=true&sorton=metarating&sortorder=desc">GET /games?sorton=metarating&sortorder=desc</a> --- desecending sort by 'metarating'</li>
+		<li><a href="/games?outputpretty=true&sorton=metarating&sortorder=asc">GET /games?sorton=metarating&sortorder=asc</a> --- ascending sort by 'metarating' </li>
+		<li><a href="/games?outputpretty=true&genre=Other+Shooters&sorton=metarating&sortorder=desc">GET /games?genre=Other+Shooters&sorton=metarating&sortorder=desc</a> --- descending sort by 'metarating' with 'genre'</li>
+		<li><a href="/games?outputpretty=true&genre=Other+Shooters&sorton=metarating&sortorder=asc">GET /games?genre=Other+Shooters&sorton=metarating&sortorder=asc</a> --- ascending sort by 'metarating' with 'genre'</li>
+		<li><a href="/games?outputpretty=true&metaratingstart=6.5&metaratingend=100.0&sorton=metarating&sortorder=desc">GET /games?metaratingstart=6.5&metaratingend=100.0&sorton=metarating&sortorder=desc"</a> --- metarating range</li>
+		<li><a href="/games?outputpretty=true&genre=Role-Playing&metarating=75.0">GET /games?genre=Role-Playing&metarating=75.0</a> --- retrieve games by 'metarating'</li>
+		<li><a href="/games?outputpretty=trueplatform=PC">GET /games?platform=PC</a> --- retrieve by games on PC </li>      		      	
+		<li><a href="/games?outputpretty=trueplatform=all&sorton=metarating&sortorder=desc">GET /games?platform=all&sorton=metarating&sortorder=desc</a> --- note: all filters ignored as sorting isn't implemented with platform</li>      		      	      
+	</ul>     	   
+	
+	<br/>
+	
+	<h2>EXAMPLE Game Details GET requests:</h2>        
+	<p class="notes">click these after datastore has been initialised!</p>
+	<ul>
+		<li><a href="/game/8184">GET /game/8184</a> --- retrieve game details (game, review and critic attributes) by Id</li>      		      		
+	</ul>		
+	
+	<br/>	
+	
+	<h2 colspan="2" style="font-weight:bold;">EXAMPLE Reviews GET requests:</h2>        
+	<p class="notes">click these after datastore has been initialised!</p>
+	<ul>	
+		<li><a href="/reviews?outputpretty=true&reviewstartdate=20101125&reviewenddate=20110201">GET /reviews?reviewstartdate=20101125&reviewenddate=20110201</a> --- retrieve reviews by 'publisheddate' range</li>      		      	    
+		<li><a href="/reviews?outputpretty=true&reviewstartdate=20101125&reviewenddate=20110201&rating=2.0">GET /reviews?reviewstartdate=20101125&reviewenddate=20110201&rating=2.0</a> --- retrieve reviews by 'publisheddate' range with 'rating'</li>      		      	
+		<li><a href="/reviews?outputpretty=true&rating=1.0">GET /reviews?rating=1.0</a> --- retrieve reviews by 'rating'</li>      		      	      	   
+    </ul>
+	
+	<br/>	
+	
+	<h2 colspan="2" style="font-weight:bold;">EXAMPLE Critic GET requests:</h2>        
+	<p class="notes">click these after datastore has been initialised!</p>
+	<ul>	
+		<li></li>
+    </ul>
+    
+    <br/><hr/>
+	
+	<!--//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+	
+	<h1>Example Queries - using in memory sample data</h1>
+
+	<h2>EXAMPLE Games GET requests:</h2>    	
+	<ul>
+		<li><a href="/games?outputpretty=true&name=black+ops">GET /games?name=black+ops</a> --- retrive games by 'name'</li>      		      	
+		<li><a href="/games?outputpretty=true&genre=FPS">GET /games?genre=FPS</a> --- retrieve games by 'genre'</li>      		      	
+		<li><a href="/games?outputpretty=true&sorton=metarating&sortorder=desc">GET /games?sorton=metarating&sortorder=desc</a> --- retrieve all games, desecending sort by metarating</li>      		      	
+		<li><a href="/games?outputpretty=true&sorton=metarating&sortorder=asc">GET /games?sorton=metarating&sortorder=asc</a> --- retrieve all games, ascending sort by metarating </li>      		      	
+		<li><a href="/games?outputpretty=true&genre=RTS&sorton=metarating&sortorder=desc">GET /games?genre=RTS&sorton=metarating&sortorder=desc</a> --- descending sort by metarating with genre</li>      		      	
+		<li><a href="/games?outputpretty=true&genre=RTS&sorton=metarating&sortorder=asc">GET /games?genre=RTS&sorton=metarating&sortorder=asc</a> --- ascending sort by metarating with genre</li>      		      	
+		<li><a href="/games?outputpretty=true&metaratingstart=6.5&metaratingend=10.0&sorton=metarating&sortorder=desc">GET /games?metaratingstart=6.5&metaratingend=10.0&sorton=metarating&sortorder=desc"</a> --- metarating range</li>      		      	
+		<li><a href="/games?outputpretty=true&genre=FPS&metarating=10.0">GET /games?outputpretty=true&genre=FPS&metarating=10.0</a> --- metarating</li>
+    </ul> 
+	
+	<br/>
+	
+	<h2>EXAMPLE Game Detail GET requests:</h2>
+	<ul>		
+		<li><a href="/games/123">GET /games/123</a></li>      		      	      	
+	</ul>		
+	
+	<br/>
+	
+	<h2>EXAMPLE Reviews GET requests:</h2>        
+	<ul>	
+		<li><a href="/reviews?outputpretty=true&reviewstartdate=20101225&reviewenddate=20110112">GET /reviews?reviewstartdate=20101225&reviewenddate=20110112</a></li>      		      	
+		<li><a href="/reviews?outputpretty=true&reviewstartdate=20101225&reviewenddate=20110112&rating=2.0">GET /reviews?reviewstartdate=20101225&reviewenddate=20110112&rating=2.0</a></li>      		      	
+		<li><a href="/reviews?outputpretty=true&rating=1.0">GET /reviews?rating=1.0</a></li>
+    </ul>
+  	
+  </body>
+</html>

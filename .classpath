@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry excluding="childmen/gae/aggregator/dao/impl/CopyOfObjectifyGenericDAO.java|childmen/gae/aggregator/server/MyHttpServletRequestWrapper.java|childmen/gae/aggregator/common/PMF.java|childmen/gae/aggregator/model/CopyOfGame.java|childmen/gae/aggregator/server/CriticsServlet.java|childmen/gae/aggregator/server/LocationsServlet.java|childmen/gae/aggregator/common/QueryParameters.java|childmen/gae/aggregator/server/example/ExampleDefaultServlet.java" kind="src" path="src"/>
+	<classpathentry kind="con" path="com.google.appengine.eclipse.core.GAE_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="lib/objectify-2.2.3.jar"/>
+	<classpathentry kind="lib" path="lib/gson-1.6.jar"/>
+	<classpathentry kind="output" path="war/WEB-INF/classes"/>
+</classpath>

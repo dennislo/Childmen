@@ -1,0 +1,11 @@
+#CRITIC_NAME*	HOMEPAGE_LINK	IMAGE_LINK	LOCATION	[* denotes mandatory]
+
+$	Metacritic	http://www.metacritic.com/	http://img1.gamespotcdn.com/metacritic/public/www/images/layout/mc_logo.png	United States
+
+#GAME_NAME*	PUBLISHER_LINKS	IMAGE_LINK	REVIEW_LINK	RELEASE_DATE	METASCORE	SUMMARY	DEVELOPER*	GENRES	PLATFORMS*	[* denotes mandatory]
+
+Maid_san's Caving Adventure	<a href="/company/kohei">kohei</a>	http://img1.gamespotcdn.com/metacritic/public/www/images/products/games/6/06d8640709a715858a358dabf669db75-98.jpg	/game/xbox-360/maid_sans-caving-adventure	Jan 25, 2011	null	null	kohei	Action	XBOX360,PS3,PC
+Dead Space 2	<a href="/company/electronic-arts">Electronic Arts</a>	http://img1.gamespotcdn.com/metacritic/public/www/images/products/games/2/64fab2294ba50f6ea5c332751f22c6c6-98.jpg	/game/xbox-360/dead-space-2	Jan 25, 2011	90	null	Visceral Games	Other Shooters	XBOX360
+Two Worlds II	<a href="/company/southpeak-games">SouthPeak Games</a>	http://img1.gamespotcdn.net/metacritic/public/www/images/products/games/9/95b2727f05f4d35d1a1598434e7e78f1-98.jpg	/game/xbox-360/two-worlds-ii	Jan 25, 2011	75	null	Reality Pump	Role-Playing	PC
+Beer Pong	<a href="/company/utopioneer-games">Utopioneer Games</a>	http://img2.gamespotcdn.com/metacritic/public/www/images/products/games/4/42056ce53a43cee47dbcd3dbb02b84ea-98.jpg	/game/xbox-360/beer-pong	Jan 24, 2011	null	null	Utopioneer Games	Other Sports Games	WII
+Space Racer	<a href="/company/frog-the-door">Frog The Door</a>	http://img2.gamespotcdn.net/metacritic/public/www/images/products/games/8/a27f5d2dd8e0906fe077a7d5f77f1b62-98.jpg	/game/xbox-360/space-racer	Jan 23, 2011	null	null	Frog The Door	Other Driving Games	IPHONE

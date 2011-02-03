@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	version="2.5">
+	
+	<!-- Adding ServletContextListener
+	<listener>
+		<listener-class>childmen.gae.aggregator.server.ContextInitializer</listener-class>
+	</listener>
+	-->
+	
+	<!-- Controller servlet - routers request to correct servlets -->
+	<servlet>
+		<servlet-name>Controller servlet</servlet-name>
+		<servlet-class>childmen.gae.aggregator.server.ControllerServlet</servlet-class>		
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Controller servlet</servlet-name>
+		<url-pattern>/</url-pattern>	
+	</servlet-mapping>
+	
+	<!-- Servlet Mappings -->
+	<servlet>
+		<servlet-name>Initialise</servlet-name>
+		<servlet-class>childmen.gae.aggregator.server.InitialiseServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Initialise</servlet-name>
+		<url-pattern>/initialise</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Games</servlet-name>
+		<servlet-class>childmen.gae.aggregator.server.GamesServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Games</servlet-name>
+		<url-pattern>/games</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Game Details</servlet-name>
+		<servlet-class>childmen.gae.aggregator.server.GameDetailsServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Game Details</servlet-name>
+		<url-pattern>/gamedetails</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Reviews</servlet-name>
+		<servlet-class>childmen.gae.aggregator.server.ReviewsServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Reviews</servlet-name>
+		<url-pattern>/reviews</url-pattern>
+	</servlet-mapping>		
+	
+	<!-- CRITICS Servlet Mapping 
+	<servlet>
+		<servlet-name>Critics</servlet-name>
+		<servlet-class>childmen.gae.aggregator.server.CriticsServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Critics</servlet-name>
+		<url-pattern>/criticsservlet</url-pattern>
+	</servlet-mapping>
+	
+	LOCATION Servlet Mapping 
+	<servlet>
+		<servlet-name>Locations</servlet-name>
+		<servlet-class>childmen.gae.aggregator.server.LocationsServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Locations</servlet-name>
+		<url-pattern>/locationsservlet</url-pattern>
+	</servlet-mapping>-->
+	
+	<!-- EXAMPLE Servlet Mappings -->
+	<servlet>
+		<servlet-name>Example Games</servlet-name>
+		<servlet-class>childmen.gae.aggregator.server.example.ExampleGamesServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Example Games</servlet-name>
+		<url-pattern>/examplegamesservlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Example Games Reviews</servlet-name>
+		<servlet-class>childmen.gae.aggregator.server.example.ExampleGamesReviewsServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Example Games Reviews</servlet-name>
+		<url-pattern>/examplegamesreviewsservlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Example Critics Reviews</servlet-name>
+		<servlet-class>childmen.gae.aggregator.server.example.ExampleCriticsReviewsServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Example Critics Reviews</servlet-name>
+		<url-pattern>/examplecriticsreviewsservlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Example No DAO Games Reviews Servlet</servlet-name>
+		<servlet-class>childmen.gae.aggregator.server.example.ExampleNoDAOGamesReviewsServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Example No DAO Games Reviews Servlet</servlet-name>
+		<url-pattern>/nodaogamesreviewsservlet</url-pattern>
+	</servlet-mapping>	
+	
+	<servlet>
+		<servlet-name>Example Platforms Games</servlet-name>
+		<servlet-class>childmen.gae.aggregator.server.example.ExamplePlatformsGamesServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Example Platforms Games</servlet-name>
+		<url-pattern>/exampleplatformsgamesservlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Delete All Entities</servlet-name>
+		<servlet-class>childmen.gae.aggregator.server.example.ExampleDeleteAllEntitiesServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Delete All Entities</servlet-name>
+		<url-pattern>/exampledeleteallentitiesservlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Get Games By Platform</servlet-name>
+		<servlet-class>childmen.gae.aggregator.server.example.ExampleGamesByPlatformServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Get Games By Platform</servlet-name>
+		<url-pattern>/examplegamesbyplatformservlet</url-pattern>
+	</servlet-mapping>
+	
+	<!-- EXAMPLE Helper Servlet Mappings -->
+	<servlet>
+		<servlet-name>Example Query Parameters</servlet-name>
+		<servlet-class>childmen.gae.aggregator.server.example.ExampleQueryParameters</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Example Query Parameters</servlet-name>
+		<url-pattern>/examplequeryparametersservlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Example Post Data</servlet-name>
+		<servlet-class>childmen.gae.aggregator.server.example.ExamplePostData</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Example Post Data</servlet-name>
+		<url-pattern>/examplepostdata</url-pattern>
+	</servlet-mapping>
+	
+
+	
+	<!--INDEX.HTML-->
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+	
+</web-app>

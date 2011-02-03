@@ -1,0 +1,70 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- The HTML 4.01 Transitional DOCTYPE declaration-->
+<!-- above set at the top of the file will set     -->
+<!-- the browser's rendering engine into           -->
+<!-- "Quirks Mode". Replacing this declaration     -->
+<!-- with a "Standards Mode" doctype is supported, -->
+<!-- but may lead to some differences in layout.   -->
+
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<title>Childmen Aggregator</title>		
+		<link rel="stylesheet" type="text/css" href="/static/css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="/static/css/main.css" />
+	</head>
+
+	<body>
+		<h1>Childmen Aggregator Test Harness</h1>
+
+		<h2>Available Servlets</h2>
+		<ul>
+			<li>Games - used to retrieve a list of games. You can use <a href="/ScrapeHandlerTestIndex.html">query parameters</a> to filter results.</li>
+			<li>Reviews - used to retrieve a list of reviews. Again, <a href="/ScrapeHandlerTestIndex.html">query parameters</a> can be used to filter results.</li>
+			<li>Critics - used to retrieve critics of reviews. Refer to the <a href="/ScrapeHandlerTestIndex.html">examples</a> on how to use.</li>					
+		</ul>
+
+		<br/><hr/>
+		
+		<h2>Example Usages</h2>		
+		<ul>
+			<li><a href="ScrapeHandlerTestIndex.html">Scrape Handler Test Harness</a> - click to access example queries</li>
+		</ul>
+		
+		<br/><hr/>
+		
+		<h2>Example Implementations</h2>
+		
+		<ul>
+			<li>GET commands:
+				<ul>						
+					<li><a href="examplegamesservlet">Get Games</a></li>					
+					<li><a href="examplegamesbyplatformservlet?outputpretty=true">Get Games by Platform</a></li>									
+					<li><a href="examplegamesreviewsservlet">Get Reviews of Games</a></li>
+					<li><a href="examplecriticsreviewsservlet">Get Critics of Reviews</a></li>
+				</ul>		
+			</li>
+			
+			<li>POST commands:
+				<ul>						
+					<li><a href="ExamplePost.html">Post Data using Example Form</a></li>
+				</ul>		
+			</li>
+			
+			<li>Delete commands:
+				<ul>						
+					<li><a href="exampledeleteallentitiesservlet">Delete All Entities</a> - refer to initialise.java for details</li>
+				</ul>		
+			</li>
+		</ul>
+		
+		<br/><hr/>
+					
+		<h2>Old Example Implementations</h2>
+		<ul>						
+			<li><a href="nodaogamesreviewsservlet">[No DAO] Get Reviews of Games</a></li>
+			<li><a href="qp?outformat=JSON&name=black+ops&platform=XBOX360&outputpretty=true">Using URL Query Parameters: outformat=JSON&name=black+ops&platform=XBOX360&outputpretty=true</a></li>      		
+			<li><a href="exampleplatformsgamesservlet">Get Games by XBOX360 platform</a></li>
+		</ul>				
+  </body>
+</html>

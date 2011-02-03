@@ -1,0 +1,10 @@
+#CRITIC_NAME*	HOMEPAGE_LINK	IMAGE_LINK	LOCATION	[* means mandatory]
+
+metacritic	http://www.metacritic.com/	http://img1.gamespotcdn.com/metacritic/public/www/images/layout/mc_logo.png	United States
+
+#GAME_NAME*	PUBLISHER_LINKS	IMAGE_LINK	REVIEW_LINK*	PUBLISHED_DATE*	METASCORE*	SUMMARY*	DEVELOPER	GENRES*	PLATFORMS*	[* means mandatory]
+
+Dead Space 2	<a href="/company/electronic-arts">Electronic Arts</a>	http://img2.gamespotcdn.com/metacritic/public/www/images/products/games/2/045e3d43983fb1229b1bfb52fe35e813-98.jpg	91	null	Visceral Games	Other Shooters	XBOX360,PS3,PC
+Two Worlds II	<a href="/company/southpeak-games">SouthPeak Games</a>	http://img1.gamespotcdn.net/metacritic/public/www/images/products/games/9/95b2727f05f4d35d1a1598434e7e78f1-98.jpg	76	null	Reality Pump	Role-Playing	XBOX360
+Antipole	<a href="/company/saturnine-games">Saturnine Games</a>	http://img2.gamespotcdn.com/metacritic/public/www/images/products/games/9/02dfb42a69943dde7cd6b52ad96d7495-98.jpg	null	Wield your powers of gravity manipulation to fend off a robot invasion. Perform impossible jumps, destroy enemies, and solve puzzles by bending gravity. Explore 20 challenging levels, 2 difficulty settings, and bonus unlockable content.	Saturnine Games	Action	WII
+Zombie Turkey Outbreak	<a href="/company/reggie-s">Reggie S</a>	http://img2.gamespotcdn.com/metacritic/public/www/images/products/games/0/adc8ebb4a70c08408877071b96ef5952-98.jpg	69	null	Reggie S	Action	IPHONE

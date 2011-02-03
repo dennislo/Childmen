@@ -1,0 +1,11 @@
+<!-- Indices written at Tue, 1 Feb 2011 13:36:12 UTC -->
+
+<datastore-indexes>
+
+    <!-- Used 1 time in query history -->
+    <datastore-index kind="Game" ancestor="false" source="auto">
+        <property name="genre" direction="asc"/>
+        <property name="metarating" direction="desc"/>
+    </datastore-index>
+
+</datastore-indexes>
